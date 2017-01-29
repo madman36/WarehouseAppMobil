@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MOBIL_FILIAv2", "MOBIL_FILIAv2\MOBIL_FILIAv2.csproj", "{DBF04B05-623A-4FE0-A2B5-8680D5C82A06}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DBF04B05-623A-4FE0-A2B5-8680D5C82A06}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DBF04B05-623A-4FE0-A2B5-8680D5C82A06}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DBF04B05-623A-4FE0-A2B5-8680D5C82A06}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{DBF04B05-623A-4FE0-A2B5-8680D5C82A06}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DBF04B05-623A-4FE0-A2B5-8680D5C82A06}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DBF04B05-623A-4FE0-A2B5-8680D5C82A06}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

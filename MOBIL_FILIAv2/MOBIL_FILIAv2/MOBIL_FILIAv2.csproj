@@ -1,0 +1,293 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DBF04B05-623A-4FE0-A2B5-8680D5C82A06}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MOBIL_FILIAv2</RootNamespace>
+    <AssemblyName>MOBIL_FILIAv2</AssemblyName>
+    <ProjectTypeGuids>{4D628B5B-2FBC-4AA6-8C16-197242AEB884};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <PlatformFamilyName>PocketPC</PlatformFamilyName>
+    <PlatformID>b2c48bd2-963d-4549-9169-1fa021dce484</PlatformID>
+    <OSVersion>5.2</OSVersion>
+    <DeployDirSuffix>MOBIL_FILIAv2</DeployDirSuffix>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <NativePlatformName>Windows Mobile 6 Professional SDK</NativePlatformName>
+    <FormFactorID>
+    </FormFactorID>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;$(PlatformFamilyName)</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <FileAlignment>512</FileAlignment>
+    <WarningLevel>4</WarningLevel>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;$(PlatformFamilyName)</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <FileAlignment>512</FileAlignment>
+    <WarningLevel>4</WarningLevel>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.WindowsCE.Forms" />
+    <Reference Include="mscorlib" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.SqlServerCe, Version=3.5.0.0, Culture=neutral, PublicKeyToken=3be235df1c8d2ad3, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmDodajNaMagazynPodsumowanie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDodajNaMagazynPodsumowanie.Designer.cs">
+      <DependentUpon>frmDodajNaMagazynPodsumowanie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDokumentTransportowy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDokumentTransportowy.Designer.cs">
+      <DependentUpon>frmDokumentTransportowy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDodajPozycje.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDodajPozycje.Designer.cs">
+      <DependentUpon>frmDodajPozycje.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmListaDokumentow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmListaDokumentow.Designer.cs">
+      <DependentUpon>frmListaDokumentow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMagazyn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMagazyn.Designer.cs">
+      <DependentUpon>frmMagazyn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMenu.Designer.cs">
+      <DependentUpon>frmMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPrzewoznikLista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPrzewoznikLista.Designer.cs">
+      <DependentUpon>frmPrzewoznikLista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRozchod.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRozchod.Designer.cs">
+      <DependentUpon>frmRozchod.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Item.cs" />
+    <Compile Include="ListaDokumentow.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ListaDokumentow.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LocalDBDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LocalDBDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MOBIL_FILIADataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MOBIL_FILIADataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MOBIL_FILIAv2DBDataSet.cs">
+      <DependentUpon>MOBIL_FILIAv2DBDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MOBIL_FILIAv2DBDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MOBIL_FILIAv2DBDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmDodajNaMagazynPodsumowanie.resx">
+      <DependentUpon>frmDodajNaMagazynPodsumowanie.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDokumentTransportowy.resx">
+      <DependentUpon>frmDokumentTransportowy.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDodajPozycje.resx">
+      <DependentUpon>frmDodajPozycje.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmListaDokumentow.resx">
+      <DependentUpon>frmListaDokumentow.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMagazyn.resx">
+      <DependentUpon>frmMagazyn.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMenu.resx">
+      <DependentUpon>frmMenu.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPrzewoznikLista.resx">
+      <DependentUpon>frmPrzewoznikLista.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRozchod.resx">
+      <DependentUpon>frmRozchod.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StanPojemnikiEditViewDialog.resx">
+      <DependentUpon>StanPojemnikiEditViewDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StanPojemnikiSummaryViewDialog.resx">
+      <DependentUpon>StanPojemnikiSummaryViewDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TOWARYEditViewDialog.resx">
+      <DependentUpon>TOWARYEditViewDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TOWARYSummaryViewDialog.resx">
+      <DependentUpon>TOWARYSummaryViewDialog.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Stan.cs" />
+    <Compile Include="StanPojemnikiEditViewDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StanPojemnikiEditViewDialog.Designer.cs">
+      <DependentUpon>StanPojemnikiEditViewDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StanPojemnikiSummaryViewDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StanPojemnikiSummaryViewDialog.Designer.cs">
+      <DependentUpon>StanPojemnikiSummaryViewDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Stock.cs" />
+    <Compile Include="TOWARYEditViewDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TOWARYEditViewDialog.Designer.cs">
+      <DependentUpon>TOWARYEditViewDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TOWARYSummaryViewDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TOWARYSummaryViewDialog.Designer.cs">
+      <DependentUpon>TOWARYSummaryViewDialog.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="LocalDB.sdf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="MOBIL_FILIA.sdf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="MOBIL_FILIAv2DB.sdf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ListaDokumentow.xsc">
+      <DependentUpon>ListaDokumentow.xsd</DependentUpon>
+    </None>
+    <None Include="ListaDokumentow.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ListaDokumentow.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="ListaDokumentow.xss">
+      <DependentUpon>ListaDokumentow.xsd</DependentUpon>
+    </None>
+    <None Include="LocalDBDataSet.xsc">
+      <DependentUpon>LocalDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="LocalDBDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LocalDBDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LocalDBDataSet.xss">
+      <DependentUpon>LocalDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="MOBIL_FILIADataSet.xsc">
+      <DependentUpon>MOBIL_FILIADataSet.xsd</DependentUpon>
+    </None>
+    <None Include="MOBIL_FILIADataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MOBIL_FILIADataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MOBIL_FILIADataSet.xss">
+      <DependentUpon>MOBIL_FILIADataSet.xsd</DependentUpon>
+    </None>
+    <None Include="MOBIL_FILIAv2DBDataSet.xsc">
+      <DependentUpon>MOBIL_FILIAv2DBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="MOBIL_FILIAv2DBDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MOBIL_FILIAv2DBDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MOBIL_FILIAv2DBDataSet.xss">
+      <DependentUpon>MOBIL_FILIAv2DBDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CompactFramework.CSharp.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}">
+        <HostingProcess disable="1" />
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
