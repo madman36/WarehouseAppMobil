@@ -7,12 +7,7 @@ C:\Users\madman36\Documents\Visual Studio 2008\Projects\MOBIL_FILIAv2\MOBIL_FILI
 C:\Users\madman36\Documents\Visual Studio 2008\Projects\MOBIL_FILIAv2\MOBIL_FILIAv2\obj\Debug\MOBIL_FILIAv2.frmPrzewoznikLista.resources
 C:\Users\madman36\Documents\Visual Studio 2008\Projects\MOBIL_FILIAv2\MOBIL_FILIAv2\obj\Debug\MOBIL_FILIAv2.frmRozchod.resources
 C:\Users\madman36\Documents\Visual Studio 2008\Projects\MOBIL_FILIAv2\MOBIL_FILIAv2\obj\Debug\MOBIL_FILIAv2.Properties.Resources.resources
-C:\Users\madman36\Documents\Visual Studio 2008\Projects\MOBIL_FILIAv2\MOBIL_FILIAv2\obj\Debug\MOBIL_FILIAv2.StanPojemnikiEditViewDialog.resources
-C:\Users\madman36\Documents\Visual Studio 2008\Projects\MOBIL_FILIAv2\MOBIL_FILIAv2\obj\Debug\MOBIL_FILIAv2.StanPojemnikiSummaryViewDialog.resources
-C:\Users\madman36\Documents\Visual Studio 2008\Projects\MOBIL_FILIAv2\MOBIL_FILIAv2\obj\Debug\MOBIL_FILIAv2.TOWARYEditViewDialog.resources
-C:\Users\madman36\Documents\Visual Studio 2008\Projects\MOBIL_FILIAv2\MOBIL_FILIAv2\obj\Debug\MOBIL_FILIAv2.TOWARYSummaryViewDialog.resources
 C:\Users\madman36\Documents\Visual Studio 2008\Projects\MOBIL_FILIAv2\MOBIL_FILIAv2\obj\Debug\MOBIL_FILIAv2.csproj.GenerateResource.Cache
-C:\Users\madman36\Documents\Visual Studio 2008\Projects\MOBIL_FILIAv2\MOBIL_FILIAv2\bin\Debug\LocalDB.sdf
 C:\Users\madman36\Documents\Visual Studio 2008\Projects\MOBIL_FILIAv2\MOBIL_FILIAv2\bin\Debug\MOBIL_FILIA.sdf
 C:\Users\madman36\Documents\Visual Studio 2008\Projects\MOBIL_FILIAv2\MOBIL_FILIAv2\bin\Debug\MOBIL_FILIAv2DB.sdf
 C:\Users\madman36\Documents\Visual Studio 2008\Projects\MOBIL_FILIAv2\MOBIL_FILIAv2\bin\Debug\MOBIL_FILIAv2.exe
@@ -20,3 +15,7 @@ C:\Users\madman36\Documents\Visual Studio 2008\Projects\MOBIL_FILIAv2\MOBIL_FILI
 C:\Users\madman36\Documents\Visual Studio 2008\Projects\MOBIL_FILIAv2\MOBIL_FILIAv2\obj\Debug\MOBIL_FILIAv2.exe
 C:\Users\madman36\Documents\Visual Studio 2008\Projects\MOBIL_FILIAv2\MOBIL_FILIAv2\obj\Debug\MOBIL_FILIAv2.pdb
 C:\Users\madman36\Documents\Visual Studio 2008\Projects\MOBIL_FILIAv2\MOBIL_FILIAv2\obj\Debug\MOBIL_FILIAv2.frmListaDokumentow.resources
+C:\Users\madman36\Documents\Visual Studio 2008\Projects\MOBIL_FILIAv2\MOBIL_FILIAv2\obj\Debug\MOBIL_FILIAv2.frmListaPozycji.resources
+C:\Users\madman36\Documents\Visual Studio 2008\Projects\MOBIL_FILIAv2\MOBIL_FILIAv2\bin\Debug\LocalDB.sdf
+C:\Users\madman36\Documents\Visual Studio 2008\Projects\MOBIL_FILIAv2\MOBIL_FILIAv2\obj\Debug\MOBIL_FILIAv2.frmStanMagazynowy.resources
+C:\Users\madman36\Documents\Visual Studio 2008\Projects\MOBIL_FILIAv2\MOBIL_FILIAv2\obj\Debug\MOBIL_FILIAv2.frmPozycjeDokumentu.resources

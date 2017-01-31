@@ -11,10 +11,11 @@ namespace MOBIL_FILIAv2
 {
     public partial class frmDokumentTransportowy : Form
     {
+        frmRozchod prvForm;
         public frmDokumentTransportowy(frmRozchod form)
         {
             InitializeComponent();
-            frmMenu.PreviousForm = form; // poprzednia formatka
+            prvForm = form; // poprzednia formatka
         }
 
         private void label1_ParentChanged(object sender, EventArgs e)
@@ -45,7 +46,7 @@ namespace MOBIL_FILIAv2
         private void button3_Click(object sender, EventArgs e)
         {
             this.Hide();
-            frmMenu.PreviousForm.Show();
+            prvForm.Show();
         }
 
         private void label3_ParentChanged(object sender, EventArgs e)

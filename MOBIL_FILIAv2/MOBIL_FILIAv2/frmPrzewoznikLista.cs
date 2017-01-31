@@ -11,10 +11,11 @@ namespace MOBIL_FILIAv2
 {
     public partial class frmPrzewoznikLista : Form
     {
-        public frmPrzewoznikLista(Form form)
+        frmDokumentTransportowy prvForm;
+        public frmPrzewoznikLista(frmDokumentTransportowy form)
         {
             InitializeComponent();
-            frmMenu.PreviousForm = form;
+            prvForm = form;
             
         }
 
@@ -28,6 +29,12 @@ namespace MOBIL_FILIAv2
         private void dataGrid1_CurrentCellChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            prvForm.Show();
         }
     }
 }

@@ -60,6 +60,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="dsNowyDokument.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsNowyDokument.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="frmPozycjeDokumentu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPozycjeDokumentu.Designer.cs">
+      <DependentUpon>frmPozycjeDokumentu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmStanMagazynowy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>frmStanMagazynowy.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmDodajNaMagazynPodsumowanie.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -83,6 +100,12 @@
     </Compile>
     <Compile Include="frmListaDokumentow.Designer.cs">
       <DependentUpon>frmListaDokumentow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmListaPozycji.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmListaPozycji.Designer.cs">
+      <DependentUpon>frmListaPozycji.cs</DependentUpon>
     </Compile>
     <Compile Include="frmMagazyn.cs">
       <SubType>Form</SubType>
@@ -108,16 +131,33 @@
     <Compile Include="frmRozchod.Designer.cs">
       <DependentUpon>frmRozchod.cs</DependentUpon>
     </Compile>
-    <Compile Include="Item.cs" />
-    <Compile Include="ListaDokumentow.Designer.cs">
+    <Compile Include="ListaPozycji.cs">
+      <DependentUpon>ListaPozycji.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ListaPozycji.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>ListaDokumentow.xsd</DependentUpon>
+      <DependentUpon>ListaPozycji.xsd</DependentUpon>
     </Compile>
     <Compile Include="LocalDBDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>LocalDBDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LocalDBDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LocalDBDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LocalDBDataSet1LOCAL.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LocalDBDataSet1LOCAL.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="LocalDBDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LocalDBDataSet2.xsd</DependentUpon>
     </Compile>
     <Compile Include="MOBIL_FILIADataSet.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -134,6 +174,10 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>frmStanMagazynowy.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmDodajNaMagazynPodsumowanie.resx">
       <DependentUpon>frmDodajNaMagazynPodsumowanie.cs</DependentUpon>
       <SubType>Designer</SubType>
@@ -150,12 +194,20 @@
       <DependentUpon>frmListaDokumentow.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmListaPozycji.resx">
+      <DependentUpon>frmListaPozycji.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmMagazyn.resx">
       <DependentUpon>frmMagazyn.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMenu.resx">
       <DependentUpon>frmMenu.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPozycjeDokumentu.resx">
+      <DependentUpon>frmPozycjeDokumentu.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="frmPrzewoznikLista.resx">
@@ -171,51 +223,9 @@
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="StanPojemnikiEditViewDialog.resx">
-      <DependentUpon>StanPojemnikiEditViewDialog.cs</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="StanPojemnikiSummaryViewDialog.resx">
-      <DependentUpon>StanPojemnikiSummaryViewDialog.cs</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="TOWARYEditViewDialog.resx">
-      <DependentUpon>TOWARYEditViewDialog.cs</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="TOWARYSummaryViewDialog.resx">
-      <DependentUpon>TOWARYSummaryViewDialog.cs</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
-    <Compile Include="Stan.cs" />
-    <Compile Include="StanPojemnikiEditViewDialog.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="StanPojemnikiEditViewDialog.Designer.cs">
-      <DependentUpon>StanPojemnikiEditViewDialog.cs</DependentUpon>
-    </Compile>
-    <Compile Include="StanPojemnikiSummaryViewDialog.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="StanPojemnikiSummaryViewDialog.Designer.cs">
-      <DependentUpon>StanPojemnikiSummaryViewDialog.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Stock.cs" />
-    <Compile Include="TOWARYEditViewDialog.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="TOWARYEditViewDialog.Designer.cs">
-      <DependentUpon>TOWARYEditViewDialog.cs</DependentUpon>
-    </Compile>
-    <Compile Include="TOWARYSummaryViewDialog.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="TOWARYSummaryViewDialog.Designer.cs">
-      <DependentUpon>TOWARYSummaryViewDialog.cs</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -230,16 +240,27 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <None Include="ListaDokumentow.xsc">
-      <DependentUpon>ListaDokumentow.xsd</DependentUpon>
+    <None Include="dsNowyDokument.xsc">
+      <DependentUpon>dsNowyDokument.xsd</DependentUpon>
     </None>
-    <None Include="ListaDokumentow.xsd">
+    <None Include="dsNowyDokument.xsd">
       <SubType>Designer</SubType>
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>ListaDokumentow.Designer.cs</LastGenOutput>
+      <LastGenOutput>dsNowyDokument.Designer.cs</LastGenOutput>
     </None>
-    <None Include="ListaDokumentow.xss">
-      <DependentUpon>ListaDokumentow.xsd</DependentUpon>
+    <None Include="dsNowyDokument.xss">
+      <DependentUpon>dsNowyDokument.xsd</DependentUpon>
+    </None>
+    <None Include="ListaPozycji.xsc">
+      <DependentUpon>ListaPozycji.xsd</DependentUpon>
+    </None>
+    <None Include="ListaPozycji.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ListaPozycji.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="ListaPozycji.xss">
+      <DependentUpon>ListaPozycji.xsd</DependentUpon>
     </None>
     <None Include="LocalDBDataSet.xsc">
       <DependentUpon>LocalDBDataSet.xsd</DependentUpon>
@@ -251,6 +272,39 @@
     </None>
     <None Include="LocalDBDataSet.xss">
       <DependentUpon>LocalDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="LocalDBDataSet1.xsc">
+      <DependentUpon>LocalDBDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="LocalDBDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LocalDBDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LocalDBDataSet1.xss">
+      <DependentUpon>LocalDBDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="LocalDBDataSet1LOCAL.xsc">
+      <DependentUpon>LocalDBDataSet1LOCAL.xsd</DependentUpon>
+    </None>
+    <None Include="LocalDBDataSet1LOCAL.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LocalDBDataSet1LOCAL.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LocalDBDataSet1LOCAL.xss">
+      <DependentUpon>LocalDBDataSet1LOCAL.xsd</DependentUpon>
+    </None>
+    <None Include="LocalDBDataSet2.xsc">
+      <DependentUpon>LocalDBDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="LocalDBDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>LocalDBDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="LocalDBDataSet2.xss">
+      <DependentUpon>LocalDBDataSet2.xsd</DependentUpon>
     </None>
     <None Include="MOBIL_FILIADataSet.xsc">
       <DependentUpon>MOBIL_FILIADataSet.xsd</DependentUpon>

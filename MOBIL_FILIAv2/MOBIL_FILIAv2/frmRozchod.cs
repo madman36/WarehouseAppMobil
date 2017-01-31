@@ -11,12 +11,13 @@ namespace MOBIL_FILIAv2
 {
     public partial class frmRozchod : Form
     {
-
+        frmMenu prvForm;
         public frmRozchod(frmMenu form)
         {
             InitializeComponent();
-            frmMenu.PreviousForm = form;
+            prvForm = form;
 
+            // Setting up DataGridTable Styles 
             DataGridTableStyle dgts = new DataGridTableStyle();
             dgts.MappingName = "StanPojemniki";
 
@@ -61,8 +62,8 @@ namespace MOBIL_FILIAv2
 
         private void frmRozchod_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'mobiL_FILIAv2DBDataSet1.StanPojemniki' table. You can move, or remove it, as needed.
-            this.stanPojemnikiTableAdapter.Fill(this.mobiL_FILIAv2DBDataSet1.StanPojemniki);
+            // TODO: This line of code loads data into the 'localDBDataSet2.ListaDokumentow' table. You can move, or remove it, as needed.
+            this.listaDokumentowTableAdapter.Fill(this.localDBDataSet2.ListaDokumentow);
 
         }
 
@@ -74,7 +75,7 @@ namespace MOBIL_FILIAv2
         private void button5_Click(object sender, EventArgs e)
         { 
             this.Hide();
-            frmMenu.PreviousForm.Show();
+            prvForm.Show();
         }
 
        

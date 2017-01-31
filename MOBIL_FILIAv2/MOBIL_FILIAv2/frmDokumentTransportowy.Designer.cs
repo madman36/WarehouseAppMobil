@@ -77,7 +77,7 @@
             // 
             this.dateTimePicker1.Font = new System.Drawing.Font("Tahoma", 16F, System.Drawing.FontStyle.Regular);
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(212, 305);
+            this.dateTimePicker1.Location = new System.Drawing.Point(212, 298);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(261, 59);
             this.dateTimePicker1.TabIndex = 3;
@@ -148,7 +148,7 @@
             // 
             // label2
             // 
-            this.label2.Location = new System.Drawing.Point(4, 374);
+            this.label2.Location = new System.Drawing.Point(4, 370);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(124, 63);
             this.label2.Text = "Zakład     docelowy:";
@@ -165,7 +165,7 @@
             // comboBox2
             // 
             this.comboBox2.Font = new System.Drawing.Font("Tahoma", 16F, System.Drawing.FontStyle.Regular);
-            this.comboBox2.Location = new System.Drawing.Point(143, 140);
+            this.comboBox2.Location = new System.Drawing.Point(145, 142);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(328, 64);
             this.comboBox2.TabIndex = 15;
@@ -176,9 +176,9 @@
             this.comboBox3.Items.Add("GCH12345");
             this.comboBox3.Items.Add("GD8978");
             this.comboBox3.Items.Add("GDA45689");
-            this.comboBox3.Location = new System.Drawing.Point(164, 220);
+            this.comboBox3.Location = new System.Drawing.Point(145, 220);
             this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(307, 64);
+            this.comboBox3.Size = new System.Drawing.Size(328, 64);
             this.comboBox3.TabIndex = 16;
             // 
             // button7

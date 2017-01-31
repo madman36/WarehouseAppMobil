@@ -11,9 +11,6 @@ namespace MOBIL_FILIAv2
 {
     public partial class frmMenu : Form
     {
-        public static Form PreviousForm;
-        public int Id=1;
-
         public frmMenu()
         {
             InitializeComponent();

@@ -11,28 +11,37 @@ namespace MOBIL_FILIAv2
 {
     public partial class frmMagazyn : Form
     {
-        public frmMagazyn(Form form)
+        frmMenu prvForm;
+        public frmMagazyn(frmMenu form)
         {
             InitializeComponent();
-            frmMenu.PreviousForm = form;
+            prvForm = form;
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            frmDodajPozycje frmDodajPoz = new frmDodajPozycje(this);
-            frmDodajPoz.Show();
+            frmDodajPozycje frmDP = new frmDodajPozycje(this);
+            frmDP.Show();
             this.Hide();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            frmStanMagazynowy frmSM = new frmStanMagazynowy(this);
+            frmSM.Show();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
             this.Hide();
-            frmMenu.PreviousForm.Show();
+            prvForm.Show();
         }
+
+        private void frmMagazyn_Load(object sender, EventArgs e)
+        {
+
+        }
+ 
     }
 }

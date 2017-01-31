@@ -11,11 +11,13 @@ namespace MOBIL_FILIAv2
 {
     public partial class frmDodajPozycje : Form
     {
-        private Form PreviousForm;
-        public frmDodajPozycje(Form form)
+        frmMagazyn prvForm;
+        
+        public frmDodajPozycje(frmMagazyn form)
         {
             InitializeComponent();
-            frmMenu.PreviousForm = form;
+            prvForm = form;
+            button1.BackColor = Color.Red;
         }
 
 
@@ -36,25 +38,48 @@ namespace MOBIL_FILIAv2
 
         private void DodajPozycje_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'mOBIL_FILIAv2DBDataSet.StanPojemniki' table. You can move, or remove it, as needed.
-            this.stanPojemnikiTableAdapter.Fill(this.mOBIL_FILIAv2DBDataSet.StanPojemniki);
-
 
         }
 
-        private void newMenuItemMenuItem_Click(object sender, EventArgs e)
+
+        private void button3_Click(object sender, EventArgs e)
         {
-            stanPojemnikiBindingSource.AddNew();
-            MOBIL_FILIAv2.StanPojemnikiEditViewDialog stanpojemnikiEditViewDialog = MOBIL_FILIAv2.StanPojemnikiEditViewDialog.Instance(this.stanPojemnikiBindingSource);
-            stanpojemnikiEditViewDialog.ShowDialog();
+            this.Hide();
+            prvForm.Show();
+            
+        }
+
+        private void label2_ParentChanged(object sender, EventArgs e)
+        {
 
         }
 
-        private void dgDodajPozycje_Click(object sender, EventArgs e)
+        private void textBox3_TextChanged(object sender, EventArgs e)
         {
-            MOBIL_FILIAv2.StanPojemnikiSummaryViewDialog stanpojemnikiSummaryViewDialog = MOBIL_FILIAv2.StanPojemnikiSummaryViewDialog.Instance(this.stanPojemnikiBindingSource);
-            stanpojemnikiSummaryViewDialog.ShowDialog();
+            
+        }
 
+        private void label5_ParentChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            
+            string numer = txtNumer.Text;
+            string opk = comboBox1.Text;
+            string date = dateTimePicker1.Text;
+            string ilosc = txtilosc.Text;
+            if (numer != null && opk != null && date != null && ilosc != null)
+            {
+                stanMagazynowyTableAdapter1.Insert(numer, "Towar", ilosc, date, opk);
+                button1.BackColor = Color.Green;
+            }
+            else
+            {
+                MessageBox.Show("Wypełnij wszystkie pola");
+            }
         }
     }
 }
