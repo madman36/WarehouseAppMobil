@@ -11,14 +11,28 @@ namespace MOBIL_FILIAv2
 {
     public partial class frmPozycjeDokumentu : Form
     {
-        public frmPozycjeDokumentu()
+        frmDokumentTransportowy prvForm;
+        public frmPozycjeDokumentu(frmDokumentTransportowy form)
         {
             InitializeComponent();
+            prvForm = form;
         }
 
         private void dataGrid1_CurrentCellChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void frmPozycjeDokumentu_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'localDBDataSet1.StanMagazynowy' table. You can move, or remove it, as needed.
+            this.stanMagazynowyTableAdapter.Fill(this.localDBDataSet1.StanMagazynowy);
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Tutaj pojawi się stan magazynowy z mozliwością wyboru pojemnika i dodania go do listy wysyłkowej");
         }
     }
 }

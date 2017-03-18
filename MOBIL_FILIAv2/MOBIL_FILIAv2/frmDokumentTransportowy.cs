@@ -64,7 +64,9 @@ namespace MOBIL_FILIAv2
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
+            this.Visible = false;
+            frmPozycjeDokumentu frmPD = new frmPozycjeDokumentu(this);
+            frmPD.Show();
         }
     }
 }

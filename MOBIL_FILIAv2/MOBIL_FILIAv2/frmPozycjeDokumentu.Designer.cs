@@ -28,15 +28,27 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            this.stanMagazynowyBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dataGrid1 = new System.Windows.Forms.DataGrid();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
+            this.localDBDataSet1 = new MOBIL_FILIAv2.LocalDBDataSet1();
+            this.stanMagazynowyTableAdapter = new MOBIL_FILIAv2.LocalDBDataSet1TableAdapters.StanMagazynowyTableAdapter();
+            ((System.ComponentModel.ISupportInitialize)(this.stanMagazynowyBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.localDBDataSet1)).BeginInit();
             this.SuspendLayout();
+            // 
+            // stanMagazynowyBindingSource
+            // 
+            this.stanMagazynowyBindingSource.DataMember = "StanMagazynowy";
+            this.stanMagazynowyBindingSource.DataSource = this.localDBDataSet1;
             // 
             // dataGrid1
             // 
             this.dataGrid1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.dataGrid1.DataSource = this.stanMagazynowyBindingSource;
             this.dataGrid1.Dock = System.Windows.Forms.DockStyle.Top;
             this.dataGrid1.Location = new System.Drawing.Point(0, 0);
             this.dataGrid1.Name = "dataGrid1";
@@ -52,6 +64,7 @@
             this.button1.Size = new System.Drawing.Size(155, 70);
             this.button1.TabIndex = 1;
             this.button1.Text = "MAGAZYN";
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -71,6 +84,16 @@
             this.button3.TabIndex = 3;
             this.button3.Text = "WYJŚCIE";
             // 
+            // localDBDataSet1
+            // 
+            this.localDBDataSet1.DataSetName = "LocalDBDataSet1";
+            this.localDBDataSet1.Prefix = "";
+            this.localDBDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // stanMagazynowyTableAdapter
+            // 
+            this.stanMagazynowyTableAdapter.ClearBeforeFill = true;
+            // 
             // frmPozycjeDokumentu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(192F, 192F);
@@ -84,6 +107,9 @@
             this.Location = new System.Drawing.Point(0, 52);
             this.Name = "frmPozycjeDokumentu";
             this.Text = "frmPozycjeDokumentu";
+            this.Load += new System.EventHandler(this.frmPozycjeDokumentu_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.stanMagazynowyBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.localDBDataSet1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -94,5 +120,8 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
+        private LocalDBDataSet1 localDBDataSet1;
+        private System.Windows.Forms.BindingSource stanMagazynowyBindingSource;
+        private MOBIL_FILIAv2.LocalDBDataSet1TableAdapters.StanMagazynowyTableAdapter stanMagazynowyTableAdapter;
     }
 }
